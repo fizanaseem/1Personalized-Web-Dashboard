@@ -1,0 +1,166 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin: 0;
+    font-weight: bold;
+}
+
+.toggle-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #45a049;
+}
+
+/* Main Content */
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.quote {
+    font-size: 1.2rem;
+    color: #555;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.input {
+    padding: 10px;
+    width: 80%;
+    font-size: 1rem;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Task List */
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.task-list li:hover {
+    background-color: #ddd;
+}
+
+/* Time */
+.time {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode .card {
+    background-color: #444;
+}
+
+body.dark-mode .btn {
+    background-color: #555;
+}
+
+body.dark-mode .btn:hover {
+    background-color: #777;
+}
+
+body.dark-mode .input {
+    background-color: #555;
+    color: white;
+    border: 1px solid #777;
+}
+
+body.dark-mode .task-list li {
+    background-color: #555;
+}
+
+body.dark-mode .footer {
+    color: #ccc;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #555;
+    font-size: 1rem;
+}

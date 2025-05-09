@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="main-title">Interactive Dashboard</h1>
+            <button id="toggle-dark" class="btn toggle-btn">Switch Theme</button>
+        </header>
+
+        <main class="main-content">
+            <section class="card quote-card">
+                <h2>Inspirational Quotes</h2>
+                <p id="quote" class="quote">Click the button for inspiration!</p>
+                <button id="quote-btn" class="btn">Get Quote</button>
+            </section>
+
+            <section class="card task-card">
+                <h2>To-Do List</h2>
+                <input type="text" id="task-input" placeholder="Add a new task..." class="input">
+                <button id="add-task-btn" class="btn">Add Task</button>
+                <ul id="task-list" class="task-list"></ul>
+            </section>
+
+            <section class="card time-card">
+                <h2>Current Time</h2>
+                <p id="time" class="time">00:00:00</p>
+            </section>
+
+            <section class="card color-card">
+                <h2>Change Background Color</h2>
+                <button id="color-btn" class="btn">Generate Color</button>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Created with 💻 by Fiza Naseem</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
